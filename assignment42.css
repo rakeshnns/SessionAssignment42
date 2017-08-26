@@ -1,0 +1,57 @@
+/* CSS STYLE SHEET */
+
+div {
+  position: relative;
+  margin: auto;
+  width: 200px;
+  height: 500px;
+  background-color: #f3f367;
+  border: 1px solid black;
+  text-align: center;
+}
+div.stop, div.start, div.go {
+  -webkit-border-radius: 10%;
+  -moz-border-radius: 10%;
+  -ms-border-radius: 10%;
+  border-radius: 10%;
+  width: 50%;
+  height: 30%;
+}
+div.stop {
+  background-color: #ff0d2e;
+  opacity: 0.5;
+}
+div.start {
+  background-color: #fffa37;
+  opacity: 0.5;
+}
+div.go {
+  background-color: #0dff20;
+  opacity: 0.5;
+}
+p {
+  padding: 35%;
+  font-weight: bold;
+}
+.stop:hover, .start:hover, .go:hover {
+  -webkit-border-radius: 50%;
+  -moz-border-radius: 50%;
+  -ms-border-radius: 50%;
+  border-radius: 50%;
+  opacity: 1;
+}
+.stop:hover, .start:hover, .go:hover > p {
+  color: white;
+}
+.note, .red, .yellow, .green {
+  font-style: italic;
+}
+.red {
+  color: red;
+}
+.yellow {
+  color: yellow;
+}
+.green {
+  color: green;
+}

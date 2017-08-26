@@ -1,0 +1,27 @@
+//main
+
+//import parctial scss from _partial42.scss
+@import '_partial42';
+
+p {
+  padding: 35%;
+  font-weight: bold;
+}
+
+.stop:hover, .start:hover, .go:hover {
+  @include border-radius(50%);
+  opacity: 1;
+}
+
+.stop:hover, .start:hover, .go:hover > p {
+  color: white;
+}
+.note{
+  font-style: italic;}
+.red{@extend .note;
+  color: red;}
+.yellow{@extend .note;
+  color: yellow;}
+
+.green{@extend .note;
+  color: green;}
