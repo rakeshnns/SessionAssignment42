@@ -1,0 +1,40 @@
+//Partial SCSSS
+
+
+// Mixin customer paramter for Border radius
+@mixin border-radius($radius){
+  -webkit-border-radius:$radius;
+  -moz-border-radius:$radius;
+  -ms-border-radius:$radius;
+  border-radius:$radius
+}
+
+//Div common styles
+div {
+  position: relative;
+  margin: auto;
+  width: 200px;
+  height: 500px;
+  background-color: #f3f367;
+  border: 1px solid black;
+  text-align: center;
+  &.stop, &.start, &.go {
+    @include border-radius(10%);
+    width: 50%;
+    height: 30%;
+  }
+  &.stop {
+    background-color: #ff0d2e;
+    opacity: .5;
+  }
+  &.start {
+    background-color: #fffa37;
+    opacity: .5;
+  }
+  &.go {
+    background-color: #0dff20;
+    opacity: .5;
+  }
+}
+
+
